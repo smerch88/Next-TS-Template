@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import { withLayout } from '@/layout/Layout';
+import { Hero } from '@/page-components/Hero/Hero';
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <title>Arsenii Maksymenko Template</title>
+        <Hero />
       </Head>
     </>
   );
