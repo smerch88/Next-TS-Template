@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx commitlint --edit $1 ||
+(
+    echo '😄🤪😄 Whoopsie Whoopsie! Looks like you messed the prefix. Go read 👀 some convention docs, pour little thing.. 😄🤪😄'
+    false;
+)
+
+# If everything passes... Now we can commit
+echo '🥳🥳🥳🥳 Yeah baby, push it! 🥳🥳🥳🥳'
