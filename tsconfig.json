@@ -17,7 +17,12 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts",
@@ -25,7 +30,8 @@
     "**/*.tsx",
     "pages/api/sendMail.js",
     "components/Form/index.js",
-    "utils/schema.js"
+    "utils/schema.js",
+    ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }
